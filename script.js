@@ -54,6 +54,8 @@ function checkVisibility() {
   
   // Run the checkVisibility function on page load as well
   document.addEventListener('DOMContentLoaded', checkVisibility);
+
+  
   
   
   

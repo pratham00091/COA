@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COA</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" type="image/x-icon">
 </head>
 <body style="background-color: #001F3F;">
     <nav>
@@ -22,19 +23,264 @@
                 <div class="menu-items">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="courseactivity.html">Course Activity</a></li>
+                    <li><a href="project.html">Course Project</a></li>
                 </div>
             </div>
         </div>
     </nav>
-    <section class="intcourse">
-        <div class="intcour">
-            <h2>Project</h2>
-            <div style="text-align: center;">
-                <img src="instruction.png" alt="">
-            </div>            
-    </section> 
-   
+    <section>
+        <div class="nbi-card">
+            <h2>Design an 8-bit processor using 2-address format for immediate addressing mode</h2>
+            
+        </div>
+        <div class="nb-card">
+        <div class="txts">
+            <p style="text-align: justify;">
+                <h3>ALU: An 8-bit Arithmetic Logic Unit </h3>
+                An 8-bit ALU is like a mini math genius inside a computer chip that works with 8-bit numbers. These numbers are sequences of 8 zeros and ones, meaning it can handle values ranging from 0 to 255. The ALU is really skilled at math and logical operations, such as: <br>
 
+                <ul style="padding-left: 20px; font-size: 17px; line-height: 26px; margin-top: 10px;">
+                    <li><strong>Addition and Subtraction:</strong> Solving math problems like a calculator.</li>
+                    <li><strong>Logical Operations:</strong> Performing tasks like AND, OR, and XOR, which help the computer make decisions.</li>
+                    <li><strong>Shifting:</strong> Moving bits left or right, which is useful for tasks like multiplying or dividing by powers of 2.</li>
+                  </ul>
+</div>
+        </div>
+    </section>
+    <section>
+        <div class="nbi-card">
+            <h2>ALU</h2>
+            
+        </div>
+       
+        <div style="text-align: center;">
+            <img src="alu4.png" alt="alu">
+        </div>
+    </section>
+    <section>
+        <div class="nbi-card">
+            <h2>Program Counter (PC)</h2>
+        </div>
+        <div class="nb-card">
+        <div class="txts">
+            <p style="text-align: justify;">
+                    The Program Counter (PC) is a vital register in a computer's processor, overseeing the memory address of the upcoming instruction and guiding the sequential execution of a program.
+                  
+      
+                  <ul style="list-style: none; padding: 0; margin: 10px 0; line-height: 1.8; font-size: 17px;">
+                    <li><strong>Instruction Address Management:</strong> Tracks the memory address of the next instruction to be executed and guides the processor through a program sequentially.</li>
+                    <li><strong>Control Flow Handling:</strong> Manages branches and jumps, enabling the execution of non-linear code. Handles function calls and returns, ensuring the program returns to the correct address.</li>
+                    <li><strong>Interrupts and Exceptions:</strong> Dynamically adjusts to external events, such as hardware interrupts or errors, to respond appropriately.</li>
+                    <li><strong>Fetch-Decode-Execute Cycle:</strong> Plays a pivotal role in orchestrating the systematic execution of program instructions and ensures the processor fetches the correct instruction in the sequence.</li>
+                    <li><strong>Clock Synchronization:</strong> Swiftly updates output values with each clock cycle, keeping the processor aligned with system timing for smooth operation.</li>
+                    <li><strong>Reset Functionality:</strong> Clears its contents when a reset signal is triggered, providing a clean slate for restarting or beginning a new operation.</li>
+                    <li><strong>Program Integrity:</strong> As a central component, it ensures that instructions are executed in the correct order, maintaining program reliability.</li>
+                  </ul>
+</div></p>
+        </div>
+    </section>
+    <section>
+        <div class="nbi-card">
+            <h2>PC</h2>
+            
+        </div>
+       
+        <div style="text-align: center;">
+            <img src="PC.png" alt="alu">
+        </div>
+    </section>
+    <section>
+        <div class="nbi-card">
+            <h2>Register Bank</h2>
+        </div>
+        <div class="nb-card">
+        <div class="txts">
+            <p style="text-align: justify; font-size: 17px; line-height: 26px; margin: 0;">
+                The register file in an 8-bit processor is a collection of 16 general-purpose registers, each capable of storing 8-bit data. These registers serve as small, high-speed storage units that the CPU can quickly access during processing tasks, enabling efficient execution of instructions and temporary data storage. <br>
+                The register file in an 8-bit processor consists of 16 general-purpose registers (R0 to R15), each capable of storing 8-bit data. These registers are selected using a 4-bit binary address : 
+              </p>
+              <p><br>
+            <h1> Storing Data in Registers</h1>
+            <p style="text-align: justify; font-size: 17px; line-height: 26px; margin: 0;">
+
+                When a specific register is selected (e.g., R0 with address 0000), the processor can write 8-bit data into that register. The write operation is triggered by a control signal, allowing the data to be stored in the selected register.
+            </p>
+        </div>
+        </div>
+    </section>
+    <section>
+        <div class="nbi-card">
+            <h2>Register Bank</h2>
+            
+        </div>
+       
+        <div style="text-align: center;">
+            <img src="regbank.png" alt="alu">
+        </div>
+    </section>
+    <section>
+        <div class="nbi-card">
+            <h2>Control Unit</h2>
+        </div>
+        <div class="nb-card">
+        <div class="txts">
+            <p style="text-align: justify; font-size: 17px; line-height: 26px; margin: 0;">
+                
+                The Control Unit (CU) is a fundamental part of a computer's processor that acts as the central command center for coordinating all operations. Its primary function is to direct the flow of data and instructions within the processor, ensuring that tasks are executed in the correct sequence and at the right time.
+              </p>
+              <ul style="padding-left: 20px; font-size: 17px; line-height: 26px; margin-top: 10px;">
+                <li><strong>Program Counter (PC) Enable::</strong> Activates the Program Counter to provide the address of the next instruction to fetch.</li>
+                <li><strong>Memory Read:</strong> Sends a signal to retrieve data or instructions from memory into the processor.</li>
+                <li><strong>Instruction Register (IR) Load:</strong> Transfers the fetched instruction into the Instruction Register for decoding.</li>
+              </ul>
+        </div>
+        </div>
+    </section>
+    <section>
+        <div class="nbi-card">
+            <h2>Control Unit</h2>
+            
+        </div>
+       
+        <div style="text-align: center;">
+            <img src="cu.png" alt="alu">
+        </div>
+    </section>
+    <section>
+        <div class="nbi-card">
+            <h2>Processor Design</h2>
+            
+        </div>
+       
+        <div style="text-align: center;">
+            <img src="processormain.png" alt="alu">
+        </div>
+    </section>
+    <section>
+        <a href="https://drive.google.com/drive/folders/1EG_hQ1vyYNAZuXVn_GQBM-A7uJCLd19y?usp=sharing"> 
+            <button class="buton">
+              Get File
+              <i class="fa-solid fa-check"></i>
+            </button>
+          </a>
+          
+
+    </section>
+    <section>
+        <div class="nbi-card">
+            <h2>Working</h2>
+        </div>
+        <div class="nb-card">
+        <div class="txts">
+            <p style="text-align: justify; font-size: 17px; line-height: 26px; margin: 0;">
+                This diagram represents the architecture of an 8-bit processor using a <strong>2-address format</strong> for <strong>immediate addressing mode</strong>, where instructions involve operations between a constant value (immediate data) and a register. Here's an explanation of how this processor operates:
+                <br><br>
+
+                <strong>Program Counter (PC):</strong> Holds the address of the next instruction to execute. It increments automatically unless a jump or branch modifies it.
+                <br><br>
+                <strong>Memory Address Register (MAR):</strong> Receives the address from the PC and sends it to memory to fetch instructions or data.
+                <br><br>
+                <strong>Memory Buffer Register (MBR):</strong> Temporarily holds fetched data or instructions from memory.
+                <br><br>
+                <strong>Instruction Register (IR):</strong> Stores the current instruction for decoding and execution.
+                <br><br>
+                <strong>Control Unit (CU):</strong> Decodes the instruction and generates control signals for execution. It orchestrates operations like PC enable, memory read, instruction fetch, and operand fetch.
+                <br><br>
+                <strong>Register Bank:</strong> Contains general-purpose registers (e.g., RA, RB) to store operands and results. RZ is used for storing ALU results.
+                <br><br>
+                <strong>Arithmetic Logic Unit (ALU):</strong> Performs arithmetic (e.g., addition, subtraction) and logical operations (e.g., AND, OR, XOR). It takes inputs from the register bank and stores results in RZ.
+                <br><br>
+                <strong>Clock:</strong> Synchronizes all operations and ensures sequential execution of instructions.
+                <br><br>
+                <strong>Example Execution:</strong> If the instruction is <code>ADD RA, #05</code>, the processor will:
+                <ul style=" padding: 0; margin: 10px 0; line-height: 1.8; font-size: 17px;">
+                  <li>Fetch the instruction using the PC and store it in the IR.</li>
+                  <li>Decode the instruction and identify operands (RA and #05).</li>
+                  <li>Fetch the immediate value and perform the addition in the ALU.</li>
+                  <li>Store the result back in RA.</li>
+                </ul>
+               
+              </p>
+        </div>
+        </div>
+    </section>
+    <section>
+        <div class="nbi-card">
+            <h2>Microinstruction</h2>
+        </div>
+        <div class="nb-card">
+        <div class="txts">
+            <p style="font-size: 2rem; margin-bottom: 15px;">
+                <strong><i class="fas fa-download" style="margin-right: 5px;"></i>Instruction: LOAD R0, #05</strong><br>
+                <strong>Microinstructions:</strong>
+                <ul style="margin: 10px 0; padding-left: 20px; list-style: disc; font-size:2rem;">
+                    <li><strong>T1:</strong> MAR ← (PC); CU issues Read command</li>
+                    <li><strong>T2:</strong> MBR ← (memory); PC ← (PC) + 1</li>
+                    <li><strong>T3:</strong> IR ← (MBR)</li>
+                    <li><strong>T4:</strong> ACC ← #05</li>
+                    <li><strong>T5:</strong> R0 ← (ACC)</li>
+                </ul>
+              </p>
+
+              <p style="font-size: 2rem; margin-bottom: 15px;">
+                <strong><i class="fas fa-plus" style="margin-right: 5px;"></i>Instruction: ADD R2, #03</strong><br>
+                <strong>Microinstructions:</strong>
+                <ul style="margin: 10px 0; padding-left: 20px; list-style: disc; font-size:2rem;">
+                    <li><strong>T1:</strong> MAR ← (PC); CU issues Read command</li>
+                    <li><strong>T2:</strong> MBR ← (memory); PC ← (PC) + 1</li>
+                    <li><strong>T3:</strong> IR ← (MBR)</li>
+                    <li><strong>T4:</strong> ACC ← (R2) + #03</li>
+                    <li><strong>T5:</strong> R2 ← (ACC)</li>
+                </ul>
+              </p>
+
+              <p style="font-size: 2rem; margin-bottom: 15px;">
+                <strong><i class="fas fa-minus" style="margin-right: 5px;"></i>Instruction: SUB R3, #02</strong><br>
+                <strong>Microinstructions:</strong>
+                <ul style="margin: 10px 0; padding-left: 20px; list-style: disc; font-size:2rem;">
+                    <li><strong>T1:</strong> MAR ← (PC); CU issues Read command</li>
+                    <li><strong>T2:</strong> MBR ← (memory); PC ← (PC) + 1</li>
+                    <li><strong>T3:</strong> IR ← (MBR)</li>
+                    <li><strong>T4:</strong> ACC ← (R3) - #02</li>
+                    <li><strong>T5:</strong> R3 ← (ACC)</li>
+                </ul>
+              </p>
+        </div>
+        </div>
+    </section>    
+    <section>
+        <div class="nbi-card">
+            <h2>Challenges Faced</h2>
+        </div>
+        <div class="nb-card">
+        <div class="txts">
+            <ul style=" padding: 0; text-align: justify; margin: 10px 0; line-height: 1.8; font-size: 17px;">
+                <li><strong>Instruction Encoding:</strong> Designing an efficient instruction set and encoding scheme for the 2-address format with immediate addressing mode requires careful planning to balance opcode size, address fields, and immediate values.</li>
+                <li><strong>Operand Fetching:</strong> Managing the fetching of operands, especially immediate values, involves creating a circuit that can efficiently fetch and process these values from memory or directly from the instruction.</li>
+                <li><strong>ALU Operations: </strong> implementing Arithmetic Logic Unit (ALU) operations with immediate values involves circuits capable of performing arithmetic operations on both registers and immediate values. This demands careful design to ensure compatibility and precision.</li>
+                <li><strong>Register File Design: </strong> The design of the register file needs to accommodate the storage and retrieval of 8-bit data for two operands, considering the 2-address format.</li>
+                <li><strong>Data Path Complexity: </strong> integrating the data path for immediate addressing increases complexity, requiring a well-organized circuit to handle both register-to-register and immediate value operations seamlessly.</li>
+                <li><strong>Instruction Execution Timing:</strong> Coordinating the timing of instruction execution becomes crucial to maintain proper synchronization between various stages of the processor pipeline, especially when dealing with immediate values.</li>
+                <li><strong>Control Unit Challenges:</strong> The control unit must be designed to generate appropriate control signals for the ALU, register file, and other components based on the specific needs of the 2-address format with immediate addressing mode. </li>
+              </ul>
+        </div>
+        </div>
+    </section>
+    <section>
+        <div class="nbi-card">
+            <h2>Learning Outcomes</h2>
+        </div>
+        <div class="nb-card">
+        <div class="txts">
+            <ul style=" padding: 0; text-align: justify; margin: 10px 0; line-height: 1.8; font-size: 17px;">
+                <li><strong>Trade-off Between Operand Fields and Instruction Length: </strong> I learned how to balance the size of the opcode, operand fields, and immediate values to ensure that the instruction format remains efficient, given the 8-bit constraint. This includes the challenge of fitting operands and operations within a limited bit space.</li>
+                <li><strong>Handling Immediate Addressing Mode:</strong> I gained an understanding of how immediate addressing mode simplifies memory access by directly embedding operands into the instruction. This helps in reducing memory fetch cycles and makes instructions faster.</li>
+                <li><strong>ALU Flexibility:</strong> I learned the importance of designing an ALU that can process both register-based and immediate operands. This required understanding how to integrate different data sources into the ALU without increasing its complexity too much.</li>
+                <li><strong>Control Unit Complexity: </strong> The process of designing the control unit helped me understand how complex it can be to manage different types of instructions (those involving registers and immediate values) and generate control signals to execute those operations properly.</li>
+              </ul>
+        </div>
+        </div>
+    </section>
     <section class="footer">
         <p>&copy; 2025 Computer Organization and Architecture. All rights reserved.</p>
       </section>  
