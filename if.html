@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #001F3F;">
+    <nav>
+        <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <div class="logo">
+                    <h1>COA</h1>
+                </div>
+                <div class="menu-items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courseactivity.html">Course Activity</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="nbi-card">
+            <h2>Instruction Format</h2>
+        </div>
+        <div class="nb-card">
+            
+            In computer organization, instruction formats refer to the way instructions are encoded and represented in machine language. There are several types of instruction formats, including zero, one, two, and three-address instructions.
+
+        </div>
+    </section>
+    <section class="intcourse">
+        <div class="intcour">
+            <h2>1. Immediate Addressing Mode</h2>
+            <div class="course-containerr" >
+               <img src="immeditate.png" alt="">
+                <div class="activityy-carddd">
+                    <p>
+                        In this mode, the operand is directly specified as part of the instruction. The operand is a constant value or immediate data that is used in the operation. <br>
+                        <strong>Instruction Format: </strong>
+                        <ul style="color: white; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+        
+                            <li>
+                                Opcode: The operation to be performed (e.g., ADD, SUB).
+                            </li>
+                            <li>
+        
+                                Immediate Operand: The constant value (immediate data) used by the instruction.
+                            </li>    
+                            <li>
+                                Opcode | Operand (Immediate Data)
+        
+                            </li>
+                            <li>
+                                MOV R1, #5 (Move the immediate value 5 into register R1)
+                            </li>
+                        </ul>
+                        
+                      </p>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="intcourse">
+        <div class="intcour">
+            <h2>2. Direct Addressing Mode</h2>
+            <div class="course-containerr" >
+               <img src="direct.jpg" alt="">
+                <div class="activityy-carddd">
+                    <p>
+                        In this mode, the operand's address is directly specified in the instruction. The operand is located at the memory address provided. <br>
+                        <strong>Instruction Format: </strong>
+                        <ul style="color: white; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+        
+                            <li>
+                                Opcode: The operation to be performed .
+                            </li>
+                            <li>
+        
+                                Direct Address: The memory address where the operand is stored.
+                            </li>    
+                            <li>
+                                Opcode | Direct Address
+        
+        
+                            </li>
+                            <li>
+                                MOV R1, 400 (Move the content of memory address 400 into register R1)
+                            </li>
+                        </ul>
+                        
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="intcourse">
+        <div class="intcour">
+            <h2>3. Indirect Addressing Mode</h2>
+            <div class="course-containerr" >
+               <img src="indrect.jpg" alt="">
+                <div class="activityy-carddd">
+                    <p>
+                        In this mode, the instruction specifies a memory address that contains the actual address of the operand. In other words, the address of the operand is stored in memory, and the instruction fetches that address to access the operand. <br>
+                        <strong>Instruction Format: </strong>
+                        <ul style="color: white; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+        
+                            <li>
+                                Opcode: The operation to be performed .
+                            </li>
+                            <li>
+        
+                                Pointer Address: The memory address of a pointer, which points to the operand's actual address.
+                            </li>    
+                            <li>
+                                Opcode | Pointer Address
+        
+        
+        
+                            </li>
+                            <li>
+                                MOV R1, [R2] (Move the content of the memory address stored in R2 into R1)
+                            </li>
+                        </ul>
+                        
+                      </p>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="intcourse">
+        <div class="intcour">
+            <h2>4. Register Addressing Mode</h2>
+            <div class="course-containerr" >
+               <img src="register.jpeg" alt="">
+                <div class="activityy-carddd">
+                    <p>
+                        In this mode, the operand is a register. The instruction specifies which register to use, and the operand is the content of that register. <br>
+                        <strong>Instruction Format: </strong>
+                        <ul style="color: white; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+          
+                            <li>
+                                Opcode: The operation to be performed.
+                            </li>
+                            <li>
+          
+                                Register Address: The register whose value is used as the operand.
+                            </li>    
+                            <li>
+                                Opcode | Register Address
+          
+          
+                            </li>
+                            <li>
+                                ADD R1 (Add the contents of register R2 to register R1)
+                            </li>
+                        </ul>
+                        
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="intcourse">
+        <div class="intcour">
+            <h2>5. Register Indirect Addressing Mode</h2>
+            <div class="course-containerr" >
+               <img src="regind.png" alt="">
+                <div class="activityy-carddd">
+                    <p>
+                       <ul>
+                        <li>Format: Opcode | Base Address | Index Register</li>
+                        <li>Combines a base address and an offset stored in an index register to compute the effective address.</li>
+                        <li>Example: LOAD 1000, R3</li>
+                        <li>Loads data from address 1000 + R3.                   </li>
+                       </ul>
+                        
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="intcourse">
+        <div class="intcour">
+            <h2>6.Indexed Addressing Mode        </h2>
+            <div class="course-containerr" >
+               <img src="indexadd.png" alt="">
+                <div class="activityy-carddd">
+                    <p>
+                       <ul>
+                        <li>Format: Opcode | Base Address | Index Register                        </li>
+                        <li>Combines a base address and an offset stored in an index register to compute the effective address.                        </li>
+                        <li>Example: LOAD 1000, R3                        </li>
+                        <li>Loads data from address 1000 + R3.                       </li>
+                       </ul>
+                        
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="intcourse">
+        <div class="intcour">
+            <h2>7.Relative Addressing Mode      </h2>
+            <div class="course-containerr" >
+               <img src="relative.png" alt="">
+                <div class="activityy-carddd">
+                    <p>
+                       <ul>
+                        <li>Format: Opcode | Offset                        </li>
+                        <li>The effective address is calculated by adding the offset to the current program counter (PC).                        </li>
+                        <li>Example: JUMP +4                        </li>
+                        <li>Jumps to the instruction located 4 positions ahead of the current PC.                        </li>
+                       </ul>
+                        
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="intcourse">
+        <div class="intcour">
+            <h2>8.Stack Addressing Mode    </h2>
+            <div class="course-containerr" >
+               <img src="stack.png" alt="">
+                <div class="activityy-carddd">
+                    <p>
+                       <ul>
+                        <li>Format: Opcode                        </li>
+                        <li>Operands are implicitly taken from or pushed to the stack (LIFO structure).                        </li>
+                        <li>Example: PUSH                        </li>
+                        <li>Pushes the accumulator value onto the stack.                        </li>
+                       </ul>
+                        
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="footer">
+        <p>&copy; 2025 Computer Organization and Architecture. All rights reserved.</p>
+      </section>  
+    
+</body>

@@ -547,7 +547,7 @@ video {
   margin-bottom: 20px;
 }
 
-.course-container {
+.course-containerr {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -949,4 +949,413 @@ video {
   color: white; /* Text color */
   background-color: #001F3F; /* Dark background */
   padding: 30px 20px; /* Padding for the section */
+}
+
+.intcourse {
+  margin-top: 100px;
+  color: white;
+}
+
+.intcour {
+  margin-top: 60px;
+}
+
+/* Header styling */
+.intcour h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #FFD700; /* Gold color */
+  margin-top: -1vh;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* General styles for the section */
+.intcourse {
+  margin-top: 80px;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 20px auto;
+  box-shadow: white;
+  font-family: Arial, sans-serif;
+}
+/* Container styling */
+.course-containerr {
+  display: flex;
+  flex-direction: row; /* Horizontal layout */
+  align-items: flex-start; /* Align items at the start */
+  width: 100%; /* Ensure full width */
+  max-width: 1600px; /* Limit maximum width */
+  gap: 30px; /* Space between iframe and text box */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Optional: add padding around the container */
+  background-color: #fff; /* Set background color to white for the container */
+  border-radius: 8px; /* Optional: round the container corners */
+}
+
+/* iFrame styling */
+.course-containerr iframe {
+  flex: 1; /* Takes up 50% of the space */
+  max-width: 100%; /* Ensures responsiveness */
+  height: 350px; /* Fixed height */
+  border: none; /* Removes default border */
+  border-radius: 8px; /* Rounded corners */
+  object-fit: cover; /* Ensures it maintains aspect ratio */
+  background-color: #fff; /* White background for the iframe container */
+}
+
+/* Activity card styling */
+.activityy-carddd {
+  margin-left: -20px;
+  flex: 1; /* Takes up remaining space */
+  padding: 18px;
+  border-radius: 8px;
+  font-size: 22px; /* Slightly smaller font size for better readability */
+  color: #555;
+  line-height: 1.6;
+  text-align: justify; /* Justified text alignment */
+  max-width: 900px; /* Limit width for large screens */
+  width: 100%; /* Ensure 100% width up to the max-width */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .course-containerr{
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    align-items: stretch; /* Stretch the elements */
+    gap: 20px; /* Reduce gap for smaller screens */
+    padding: 10px; /* Adjust padding for small screens */
+  }
+
+  .course-containerr iframe,
+  .activity-card {
+    max-width: 100%; /* Ensure full width */
+    width: 100%; /* Make both elements take full width */
+  }
+
+  .course-containerr iframe {
+    height: 250px; /* Reduce iframe height for small screens */
+  }
+
+  .activity-card {
+    font-size: 14px; /* Slightly smaller text for readability */
+  }
+}
+
+.module{
+  margin-top: 10px;
+}
+.processmodule h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #FFD700; /* Gold color */
+  margin-top: -1vh;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* carddd */
+.cards-row {
+  margin: 0px auto;
+}
+
+.card-modu {
+  display: inline-block;
+  width: 30%;
+  min-width: 400px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 25px 0px rgba(0, 0, 0, 0.3);  /* Replace transparentize function with rgba */
+  border-radius: 3px;
+  margin: 1em 1.5%;
+  animation: scl 0.5s ease-in-out;
+  transform-origin: left center;
+  background-color: #fff;
+}
+
+.card-title {
+  margin-top: -1.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  color: #fff;
+  font-size: 2em;
+}
+
+.card-image {
+  width: 100%;
+  height: 162px;
+}
+
+.card-desc {
+  padding: 0 1em 1em 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);  /* Replace transparentize function with rgba */
+  height: 75px;
+  overflow: hidden;
+  text-align: justify;
+}
+
+.card-actions .card-action-readMore {
+  margin: 1em 0 1em 1em;
+  height: 3em;
+  width: 8em;
+  background: #007bff;  /* Replace $buttonColor with a fixed color or variable */
+  border: none;
+  font-weight: light;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  border-radius: 2px;
+}
+
+.card-actions .card-action-readMore:hover {
+  background: rgba(255, 29, 142, 0.2);  /* Replace transparentize with rgba */
+  transition: all 0.1s ease-in;
+}
+
+.card-modu:hover {
+  box-shadow: 7px 7px 15px 2px rgba(0, 0, 0, 0.5);  /* Replace transparentize function with rgba */
+  transition: box-shadow 0.3s ease-in;
+}
+
+.ripple {
+  border-radius: 50%;
+  background: #007bff;  /* Replace $buttonColor with a fixed color */
+  position: absolute;
+  transform: scale(0);
+  opacity: 1;
+  animation: ripple 0.4s linear;
+}
+
+@keyframes ripple {
+  to {
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+
+@keyframes scl {
+  0% {
+      opacity: 0;
+      transform: scaleX(0.9) translateX(-50px);
+  }
+  75% {
+      opacity: 0.2;
+  }
+  100% {
+      transform: scaleX(1) translateX(0);
+      opacity: 1;
+  }
+}
+
+.promodule{
+  height: 70vh;
+}
+.promo h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #FFD700; /* Gold color */
+  margin-top: 1vh;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-row {
+  display: flex; /* Use Flexbox for row layout */
+  gap: 20px; /* Space between cards */
+  justify-content: flex-start; /* Align cards to the left */
+  flex-wrap: wrap; /* Allow cards to wrap to next line on smaller screens */
+}
+
+.cardd {
+  height: 250px;
+  margin-left: 20%;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cardd:hover {
+  height: 320px;
+}
+
+.cardd:hover .cta-container {
+  display: block;
+  opacity: 1;
+}
+
+.cardd:hover h2 {
+  color: #fff;
+  background-color: #3498db;
+}
+
+.cardd:hover .ctaa {
+  color: #fff;
+  background-color: #3498db;
+}
+
+.cta-container {
+  display: none;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.ctaa {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 20px;
+  background-color: #3498db;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.ctaa:hover {
+  background-color: #217dbb;
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.course-containerr img {
+  max-width: 400px; /* Make sure image does not exceed its container width */
+  height: 300px; /* Maintain image aspect ratio */
+  display: block; /* Remove space below the image */
+  border-radius: 8px; /* Optional: rounded corners for the image */
+}
+
+
+
+.nbi-card h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #FFD700; /* Gold color */
+  margin-top: 1vh;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* Styling for the nbi-card */
+.nbi-card {
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px; /* Add space below the heading */
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: bold; /* Make the heading bold */
+  color: #333; /* Dark color for the heading */
+}
+
+
+
+/* Card Styling for the p element */
+.nb-card {
+  background-color: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px; /* Padding inside the card */
+  max-width: 1200px; /* Max width of the card */
+  margin: 20px auto; /* Center the card horizontally with some space around */
+}
+
+.nb-card p {
+  font-size: 1rem; /* Font size for the text */
+  text-align: center;
+  color: #333; /* Dark color for the text */
+  line-height: 1.6; /* Line height for readability */
+  margin: 0; /* Remove default margins */
+}
+
+/* Container for the images */
+/* Container for the images */
+.image-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space images apart */
+  align-items: center; /* Align images vertically in the center */
+  max-width: 1000px; /* Limit container width */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add some padding */
+}
+
+/* Styling for left card */
+.le-card {
+  flex: 1; /* Take up equal space */
+  text-align: left; /* Align content to the left */
+}
+
+.le-card img {
+  max-width: 100%; /* Ensure the image fits inside its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+/* Styling for right card */
+.ri-card {
+  flex: 1; /* Take up equal space */
+  text-align: right; /* Align content to the right */
+}
+
+.ri-card img {
+  max-width: 100%; /* Ensure the image fits inside its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+.memooo {
+  display: flex; /* Enables flexbox for centering */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  margin-left: 20%;
+  background-color: white; /* Sets a white background */
+  padding: 10px; /* Optional: Adds padding around the image */
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  width: fit-content; /* Shrinks the container to the image size */
+  height: fit-content; /* Shrinks the container to the image size */
+}
+
+.memo-img{
+  margin-left: 25%;
+}
+
+.txts{
+  text-align: justify;
+}
+
+ul {
+  list-style-type: disc; /* Adds bullet points */
+  padding-left: 20px; /* Adds space on the left */
+  margin: 10px 0; /* Adds margin between the lists */
+}
+
+li {
+  font-size: 1rem; /* Adjusts font size */
+  color: #555; /* Sets a dark gray color for the list items */
+  line-height: 1.6; /* Increases line height for better readability */
+  margin-bottom: 8px; /* Adds space between list items */
+}
+
+b {
+  color: #333; /* Dark color for the bolded text */
+}
+
+ul ul {
+  list-style-type: circle; /* Nested lists have circle bullets */
+  padding-left: 20px; /* Indentation for nested lists */
 }

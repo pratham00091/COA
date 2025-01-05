@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #001F3F;">
+    <nav>
+        <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <div class="logo">
+                    <h1>COA</h1>
+                </div>
+                <div class="menu-items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courseactivity.html">Course Activity</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="intcourse">
+        <div class="intcour">
+            <h2>Instruction Life Cycle</h2>
+            <div style="text-align: center;">
+                <img src="instruction.png" alt="">
+            </div>            
+    </section> 
+    <section>
+        <div class="nbi-card">
+            <h2>1. Fetch Stage</h2>
+        </div>
+        <div class="nb-card">
+        <div class="txts">
+            <p style="text-align: justify;">
+                In this stage, the processor retrieves the instruction from memory. The memory address of the
+                instruction is usually stored in a Program Counter (PC), which is a register that keeps
+                track of the address of the next instruction to be executed. <br>
+
+                <ul >
+
+                  <li>  The CPU reads the instruction stored at the memory location specified by the Program Counter (PC). </li>
+                   <li> The instruction is fetched from RAM or cache memory.</li>
+                   <li> The Program Counter (PC) is incremented to point to the next instruction in sequence.</li>
+                </ul>
+                <strong style="color: black; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+
+                    Key Components Involved:
+                </strong>
+                <ul >
+                    
+                <li>
+
+                    Program Counter (PC): Holds the address of the next instruction.
+                </li> 
+                <li>
+
+                    Instruction Register (IR): Temporarily holds the instruction that has been fetched from
+                </li> 
+                    memory.
+                </ul>
+
+            </p>
+</div>
+        </div>
+    </section>
+    <section>
+        <div class="nbi-card">
+            <h2>2. Decode Stage</h2>
+        </div>
+        <div class="nb-card">
+        <div class="txts">
+            <p style="text-align: justify;">
+                    In this stage, the processor decodes the fetched instruction to determine what action needs to be performed. This involves interpreting the opcode (operation code) and identifying the operands or data required for execution. <br>
+
+                    <ul style="color: black; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+
+                      <li>  The instruction fetched into the Instruction Register (IR) is broken down.</li>
+                       <li> The opcode is decoded to identify the operation to be performed (e.g., addition, multiplication, load, jump)</li>
+                       <li> Any operands (e.g., registers or memory locations) are identified and prepared for execution.</li>
+                       <li>
+                        The necessary control signals are generated to carry out the instruction.
+                       </li>
+                    </ul>
+                    <strong style="color: black; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+
+                        Key Components Involved:
+                    </strong>
+                    <ul style="color: white; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+                        
+                    <li>
+
+                        Control Unit (CU): Interprets the opcode and generates control signals.
+                    </li> 
+                    <li>
+
+                        Decoder: A part of the control unit that decodes the instruction.
+                    </li> 
+                    </ul>
+
+                </p>
+</div>
+        </div>
+    </section>
+    <section>
+        <div class="nbi-card">
+            <h2>3. Execute Stage</h2>
+        </div>
+        <div class="nb-card">
+        <div class="txts">
+            <p style="text-align: justify;">
+                    This is the stage where the actual operation specified by the decoded instruction takes place. Depending on the type of instruction, this can involve arithmetic operations, logical operations, data movement between registers, or branch operations. <br>
+
+                    <ul style="color: black; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+
+                      <li>  If it's an arithmetic or logical instruction, the Arithmetic Logic Unit (ALU) performs the operation (e.g., ADD, SUB, AND, OR).</li>
+                       <li>If it's a data transfer instruction, data is moved between registers or between memory and a register.</li>
+                       <li> If it's a jump or branch instruction, the Program Counter (PC) is updated to reflect the new instruction address.</li>
+                       
+                    </ul>
+                    <strong style="color: black; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+
+                        Key Components Involved:
+                    </strong>
+                    <ul style="color: black; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px; text-align: justify;">
+                        
+                    <li>
+
+                        Arithmetic Logic Unit (ALU): Performs arithmetic and logical operations.
+                    </li> 
+                    <li>
+
+                        Registers: Temporary storage locations for data and operands.
+                    </li>
+                    <li>
+                        Control Unit (CU): Manages execution flow based on the decoded instruction.
+                    </li> 
+                    </ul>
+
+                </p>
+</div>
+        </div>
+    </section>
+    <section>
+        <div class="nbi-card">
+            <h2>4. Memory Access Stage (Optional)</h2>
+        </div>
+        <div class="nb-card">
+        <div class="txts">
+            <p style="text-align: justify;">
+                For instructions that involve reading from or writing to memory (e.g., LOAD, STORE), a memory access stage is necessary. <br>
+
+                <ul style="color: black; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+
+                  <li>  If the instruction requires reading from or writing to memory, the memory address is accessed, and the necessary data is transferred to or from memory.</li>
+                   <li>For LOAD instructions, data from memory is read into a register.</li>
+                   <li> For STORE instructions, data from a register is written to memory.</li>
+                   
+                </ul>
+                <strong style="color: black; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+
+                    Key Components Involved:
+                </strong>
+                <ul style="color: black; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px; text-align: justify;">
+                    
+                <li>
+
+                    Memory Unit (RAM): Used for reading and writing data.
+                </li> 
+                <li>
+
+                    Address Bus: Carries the memory address.
+                </li>
+                <li>
+                    Data Bus: Carries the data to and from memory.
+
+                </li> 
+                </ul>
+
+            </p>
+</div>
+        </div>
+    </section>
+    <section>
+        <div class="nbi-card">
+            <h2>5. Write-back Stage (Optional)</h2>
+        </div>
+        <div class="nb-card">
+        <div class="txts">
+            <p style="text-align: justify;">
+                In some cases, the results of the executed instruction need to be written back to a register or memory. For example, if an arithmetic operation results in a new value, that value must be written back to a register.<br>
+
+                            <ul style="color: black; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+
+                              <li> The result of the execution is written back to a register (or memory if necessary).</li>
+                               <li>This is typically the final step in the life cycle for operations like arithmetic calculations or data manipulation.</li>
+            
+                               
+                            </ul>
+                            <strong style="color: black; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+
+                                Key Components Involved:
+                            </strong>
+                            <ul style="color: black; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px; text-align: justify;">
+                                
+                            <li>
+
+                                Registers: Store the final result of the instruction.
+                            </li> 
+                            <li>
+
+                                Control Unit (CU): Coordinates the writing-back process.
+                            </li>
+                            </ul>
+
+                        </p>
+
+</div>
+        </div>
+    </section>
+    <section>
+        <div class="nbi-card">
+            <h2>6. Interrupt Handling (If Applicable)</h2>
+        </div>
+        <div class="nb-card">
+        <div class="txts">
+            <ul style="color: white; text-align: justify; font-size: 17px; line-height: 1.5; margin-left: 15px;">
+
+                <li> Interrupt Handling is a special phase that occurs whenever an interrupt is detected during any of the earlier stages. The processor must check whether an interrupt request has occurred.</li>
+                 <li>Interrupt Request: An interrupt can come from hardware (e.g., a device requesting I/O) or software (e.g., an exception like a division by zero).</li>
+                 <li>
+                  Interrupt Service Routine (ISR): If an interrupt is detected, the processor saves its current state (such as the program counter and other registers), so it can return to the interrupted instruction later. The processor then jumps to an Interrupt Service Routine (ISR) or interrupt handler, which is a special function designed to handle the interrupt.
+
+
+                 </li>
+
+                 
+              </ul>
+
+</div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>&copy; 2025 Computer Organization and Architecture. All rights reserved.</p>
+      </section>  
+    
+</body>
